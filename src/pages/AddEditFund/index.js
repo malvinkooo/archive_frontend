@@ -174,12 +174,23 @@ class AddEditFund extends React.Component {
         console.log(this);
         return (
             <>
+                {/*<Header />*/}
                 <header>
                     <HeaderTitle/>
                     <MainNav />
                 </header>
 
+                {/*<Page>
+                      ....
+                </Page>*/}
                 <main className="page">
+                    {/*
+                      <Breadcrumbs>
+                        <Breadcrumb.Link to="/">Головна</Breadcrumb.Link>
+                        <Breadcrumb.Link to="/funds">Фонди</Breadcrumb.Link>
+                        <Breadcrumb.Text>Додати новий фонд</Breadcrumb.Text>
+                      </Breadcrumbs>
+                    */}
                     <section className="container padding mt-20">
                         <h3 className="visually-hidden">Навігаця по сайту</h3>
                         <ul className="breadcrumbs-list">
@@ -191,11 +202,28 @@ class AddEditFund extends React.Component {
                         </ul>
                     </section>
 
+                    {/*
+                      <Section>
+                        <Section.Title>Додати фонд</Section.Title>
+                        <Section.Content>
+                          ....
+                        </Section.Content>
+                      </Section>
+                    */}
                     <section className="section container padding">
                         <h1 className="section-title">Додати фонд</h1>
 
                         <div className="section-content">
+                            {/*<Form onSubmit={this.onFormSubmited}>*/}
                             <form onSubmit={this.onFormSubmited}>
+                               {/*
+                                  See how React.Bootstrap does this: https://react-bootstrap.github.io/forms/form-control/
+
+                                  <Form.Group className="...." controlId="exampleForm.ControlInput1">
+                                    <Form.Label>...</Form.Label>
+                                    <Form.Control type="text" placeholder="..." />
+                                  </Form.Group>
+                               */}
                                 <label className={`input-box form-col ${styles.col}`}>
                                     <span className="label l-col">Номер фонду:</span>
                                     <input
@@ -211,6 +239,12 @@ class AddEditFund extends React.Component {
                                     {!isFieldValid.number ? <span className="notes">{errors.name.empty}</span> : null}
 
                                 </label>
+                                {/*
+                                  <Form.Group>
+                                    <Form.Label>...</Form.Label>
+                                    <Form.Control type="text" placeholder="...." />
+                                  </Form.Group>
+                               */}
                                 <label className={`input-box form-col ${styles.col}`}>
                                     <span className="label l-col">Назва фонду:</span>
                                     <input 
@@ -226,8 +260,18 @@ class AddEditFund extends React.Component {
                                     {!isFieldValid.name ? <span className="notes">{errors.name.empty}</span> : null}
 
                                 </label>
+                                {/* <Form.Frame> 
+                                      <Form.Label>Дата або період:</Form.Label>
+                                      ...
+                                    </Form.Frame>
+                                */}
                                 <div className={`form-col ${styles.col}`}>
                                     <span className="form-label l-col">Дата або період:</span>
+                                    {/* <Form.Group>
+                                          <Form.Label>...</Form.Label>
+                                          <Form.Control type="text" placeholder="...." />
+                                        </Form.Group>
+                                    */}
                                     <label className="input-box">
                                         <span className="label">з:</span>
                                         <input 
@@ -239,6 +283,11 @@ class AddEditFund extends React.Component {
                                             onBlur={this.onInputBlur}
                                         />
                                     </label>
+                                    {/* <Form.Group>
+                                          <Form.Label>...</Form.Label>
+                                          <Form.Control type="text" placeholder="...." />
+                                        </Form.Group>
+                                    */}
                                     <label className={`input-box ml-30`}>
                                         <span className="label">по:</span>
                                         <input
@@ -252,6 +301,12 @@ class AddEditFund extends React.Component {
 
                                     {!isFieldValid.startDate ? <span className="notes">{errors.startDate.empty}</span> : null}
                                 </div>
+                                {/* 
+                                  <Form.Group>
+                                    <Form.Label>...</Form.Label>
+                                    <Form.Control type="textarea" placeholder="...." />
+                                  </Form.Group>
+                                */}
                                 <label className={`form-col input-box`}>
                                     <span className="label l-col">Назва фонду:</span>
                                     <textarea 
@@ -261,7 +316,12 @@ class AddEditFund extends React.Component {
                                         onChange={this.onInputChanged}
                                     />
                                 </label>
-
+                                {/*
+                                  <Form.Footer>
+                                    <Button>....</Button>
+                                    <Button>....</Button>
+                                  </Form.Footer>
+                                */}
                                 <footer className="form-footer">
                                     <button 
                                         type="button" 
