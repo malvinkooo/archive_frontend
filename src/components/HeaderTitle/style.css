@@ -1,0 +1,33 @@
+.header-wrapper {
+    background-image: url('../../static/images/headerBg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 25px 0 25px 15px;
+}
+
+.header-wrapper:before {
+    background-color: rgba(255, 255, 255, .5);
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.title {
+    font-family: "Roboto-Bold";
+    font-size: 36px;
+    line-height: 48px;
+    position: relative;
+    z-index: 1;
+}
+.subtitle {
+    font-size: 18px;
+    line-height: 24px;
+    position: relative;
+    z-index: 1;
+}

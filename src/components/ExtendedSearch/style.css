@@ -1,0 +1,43 @@
+.wrapper-1 {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.wrapper-1:after {
+    content: "";
+    display: block;
+    width: 100%;
+    border: 1px dashed #1f3760;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.col {
+    min-width: 200px;
+}
+
+.checkbox {
+    margin-bottom: 15px;
+}
+
+.text {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.wrapper-2 {
+    display: flex;
+    margin-top: 15px;
+}
+
+.wrapper-3 {
+    display: flex;
+    margin-top: 15px;
+}
+
+.select-box {
+    margin-bottom: 15px;
+    width: 350px;
+}

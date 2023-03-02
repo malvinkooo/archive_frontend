@@ -1,0 +1,726 @@
+/*Regular*/
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("./static/fonts/Roboto-Regular/Roboto-Regular.eot");
+    src: url("./static/fonts/Roboto-Regular/Roboto-Regular.eot?#iefix")format("embedded-opentype"),
+    url("./static/fonts/Roboto-Regular/Roboto-Regular.woff") format("woff"),
+    url("./static/fonts/Roboto-Regular/Roboto-Regular.woff2") format("woff2"),
+    url("./static/fonts/Roboto-Regular/Roboto-Regular.ttf") format("truetype"),
+    url('./static/fonts/Roboto-Regular/Roboto-Regular.svg#Roboto-Regular') format('svg');
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+  /*Bold*/
+  @font-face {
+    font-family: "Roboto-Bold";
+    src: url("./static/fonts/Roboto-Bold/Roboto-Bold.eot");
+    src: url("./static/fonts/Roboto-Bold/Roboto-Bold.eot?#iefix")format("embedded-opentype"),
+    url("./static/fonts/Roboto-Bold/Roboto-Bold.woff") format("woff"),
+    url("./static/fonts/Roboto-Bold/Roboto-Bold.woff2") format("woff2"),
+    url("./static/fonts/Roboto-Bold/Roboto-Bold.ttf") format("truetype"),
+    url('./static/fonts/Roboto-Bold/Roboto-Bold.svg#Roboto-Bold') format('svg');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+body {
+    line-height: 1
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: '';
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+body,
+html {
+    height: 100%
+}
+
+body {
+    background-color: #fff;
+    color: #1f3760;
+    font-family: "Roboto-Regular", "Arial", sans-serif;
+    min-width: 320px
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+:global body.modal-open {
+    overflow: hidden;
+}
+
+:global .container {
+    box-sizing: border-box;
+    max-width: 1200px;
+    min-width: 320px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+:global .container.padding {
+    padding: 0 15px;
+}
+
+:global .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+:global .section {
+    margin-top: 65px;
+}
+
+:global .main {
+    padding-bottom: 50px;
+}
+
+:global .section-content {
+    padding: 55px 25px 50px 35px;
+    background-color: #d9e1ee;
+}
+
+:global .section-title {
+    font-family: "Roboto-Bold";
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+:global .input-box .label {
+    margin-right: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+    font-family: 'Roboto-Bold';
+}
+
+:global .input-box .notes,
+:global .form-col .notes {
+    flex-basis: 100%;
+    padding-left: 145px;
+    padding-top: 5px;
+    color: red;
+}
+
+:global .input-box .input {
+    border: 0;
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 10px;
+    transition: .3s;
+}
+
+:global .input-box .input:focus {
+    box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+    outline: 1px solid #49628d;
+}
+
+:global .error.input {
+    outline: 1px solid red;
+}
+
+:global .input-box textarea {
+    height: 200px;
+    resize: none;
+}
+
+:global .checkbox {
+    display: block;
+    cursor: pointer;
+}
+
+:global .checkbox .label {
+    margin-right: 10px;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Roboto-Regular';
+}
+
+:global .checkbox .label.bold {
+    font-family: 'Roboto-Bold'; 
+}
+
+:global .checkbox .checkmark {
+    background-color: #fff;
+    border: 1px solid #49628d;
+    border-radius: 2px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-right: 15px;
+    position: relative;
+    vertical-align: middle;
+    height: 20px;
+    width: 20px;
+}
+
+:global .checkbox .checkmark:before {
+    background-color: #49628d;
+    border-radius: 2px;
+    display: block;
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+:global .checkbox.radio .checkmark {
+    border-radius: 50%;
+}
+
+:global .checkbox.radio .checkmark:before {
+    border-radius: 50%;
+}
+
+:global .checkbox input {
+    display: none;
+}
+
+:global .checkbox input:checked + .checkmark:before {
+    content: "";
+}
+
+:global .select-box .form-label {
+        margin-bottom: 10px;
+        display: inline-block;
+}
+
+:global .file-input-box .label {
+    margin-right: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+    font-family: 'Roboto-Bold';
+    flex-basis: 135px;
+}
+
+:global .file-input-box .filemark {
+    background-color: #fff;
+    border: 0;
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: block;
+    font-size: 16px;
+    flex-grow: 1;
+    outline: 0;
+    padding: 10px;
+    transition: 0.3s;
+    height: 38px;
+}
+
+:global .file-input-box .input {
+    display: none;
+}
+
+:global .select-box .selected {
+    background-color: #fff;
+    border-radius: 3px;
+    box-sizing: border-box;
+    border: 0;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    text-align: left;
+    padding: 10px;
+    padding-right: 40px;
+    position: relative;
+    transition: .3s;
+    width: 100%;
+}
+
+:global .select-box .selected:before {
+    content: "";
+    border: 1px solid #49628d;
+    border-radius: 2px;
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -10px;
+    height: 20px;
+    width: 21px;
+}
+
+:global .select-box .selected:after {
+    content: "";
+    border-top: 2px solid #49628d;
+    border-right: 2px solid #49628d;
+    display: block;
+    margin-right: 60px;
+    transform: rotate(135deg);
+    height: 8px;
+    width: 8px;
+    position: absolute;
+    right: -44px;
+    top: 14px;
+    box-sizing: border-box;
+}
+
+:global .select-box .selected:hover {
+    box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+}
+
+:global .select-box .list {
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+    padding: 10px 0 15px;
+    margin-top: 3px;
+    max-height: 200px;
+    overflow: auto;
+    position: relative;
+    width: 100%;
+}
+
+:global .select-box .list .itm {
+    padding: 10px;
+}
+            
+:global .select-box .list .itm:not(.search) {
+    cursor: pointer;
+}
+
+:global .select-box .list .itm:not(.search):hover {
+    background-color: #e5efff;
+}
+
+:global .select-box .list .input {
+    border: 1px solid #d9e1ee;
+    box-sizing: border-box;
+    display: block;
+    font-size: 16px;
+    margin: 0;
+    outline: 0;
+    padding: 10px;
+    width: 100%;
+}
+
+:global .link {
+    color: #507fd1;
+    font-family: 'Roboto-Bold';
+    font-size: 16px;
+    line-height: 18px;
+    vertical-align: bottom;
+    outline: 0;
+    position: relative;
+}
+
+:global .link.icon {
+    padding: 10px 10px 10px 40px;
+    transition: .3s;
+}
+
+:global .link.icon:hover {
+    box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 25%);
+}
+
+:global .link.icon:before {
+    content: "";
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -16px;
+}
+
+:global .link.icon.folder:before {
+    background-image: url(./static/images/icons/folders.png);
+}
+
+:global .link:hover,
+:global .link:focus {
+        text-decoration: underline;
+    }
+
+:global .btn {
+    border: 0;
+    background-color: #49628d;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Roboto-Bold';
+    font-size: 16px;
+    text-align: center;
+    transition: .3s;
+    outline: 0;
+    padding: 10px 15px;
+    min-width: 120px;
+}
+
+:global .btn.shadow {
+    box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 25%);
+}
+
+:global .btn:hover,
+:global .btn:focus {
+    background-color: #fff;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+    color: #49628d;
+}
+
+:global .page {
+    padding-bottom: 50px;
+}
+
+:global .form-label {
+    margin-right: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+    font-family: 'Roboto-Bold';
+}
+
+:global .form-footer {
+    margin-top: 45px;
+    text-align: right;
+}
+
+:global .form-footer.-center {
+    text-align: center;
+}
+
+:global .ml-30 {
+    margin-left: 30px;
+}
+
+:global .mr-10 {
+    margin-right: 10px;
+}
+
+:global .mt-20 {
+    margin-top: 20px;
+}
+
+:global .breadcrumbs-list .itm {
+    display: inline-block;
+}
+
+:global .breadcrumbs-list .itm:after {
+    content: "/";
+    color: #507fd1;
+    font-family: 'Roboto-Bold';
+    font-size: 16px;
+    line-height: 18px;
+    padding-left: 2px;
+}
+
+:global .breadcrumbs-list .itm:last-child:after {
+    content: none;
+}
+
+:global .two-col {
+    display: flex;
+}
+
+:global .two-col .aside {
+    flex-basis: 200px;
+}
+
+:global .two-col .aside .btn {
+    width: 100%;
+}
+
+:global .two-col .main-col {
+    flex-grow: 1;
+    margin-right: 30px;
+}
+
+:global .list-1 {
+    list-style-type: disc;
+    padding-left: 25px;
+}
+
+:global .list-1-itm {
+    font-family: 'Roboto-Bold';
+    font-size: 18px;
+    line-height: 32px;
+    position: relative;
+}
+
+:global .list-1-itm .icon.delete {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+}
+
+:global .list-1-itm .icon.edit {
+    position: absolute;
+    right: 35px;
+    top: 10px;
+}
+
+:global .list-1-itm .icon.delete:hover,
+:global .list-1-itm .icon.edit:hover {
+    box-shadow: inset 0px 3px 3px 1px rgb(73 98 141 / 36%);
+}
+
+
+:global .list-1-itm .list-link {
+    display: block;
+    padding: 10px 75px 10px 10px;
+    transition: .3s;
+}
+
+:global .list-1-itm .list-link:hover {
+    box-shadow: 0px 3px 10px 1px rgb(0 0 0 / 25%);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+:global .icon {
+    box-sizing: border-box;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 27px 27px;
+    border: 0;
+    border-radius: 3px;
+    display: inline-block;
+	position: relative;
+    padding: 5px;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+    transition: opacity ease 0.5s;
+}
+
+:global .icon.delete {
+    background-image: url(./static/images/icons/delete.png);
+}
+
+:global .icon.edit {
+    background-image: url(./static/images/icons/edit.png);
+}
+
+:global .text {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+:global .text p {
+    padding: 5px 0;
+}
+
+:global .text h3 {
+    font-size: 24px;
+    line-height: 40px;
+    font-family: "Roboto-Bold";
+}
+
+:global .dl-list-1 {
+    display: flex;
+    font-size: 18px;
+    line-height: 28px;
+    flex-wrap: wrap;
+}
+
+:global .dl-list-1 .dt {
+    box-sizing: border-box;
+    padding-right: 10px;
+    font-family: 'Roboto-Bold';
+    width: 60px;
+}
+
+:global .dl-list-1 .dd {
+    width: calc(100% - 60px);
+}
+
+:global .form-col {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+:global .form-col .r-col {
+    flex-grow: 1;
+}
+
+:global .form-col .l-col {
+    flex-basis: 135px;
+    flex-shrink: 0;
+}
+
+:global .tags-list {
+    background-color: #fff;
+    border-radius: 3px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 10px 10px;
+}
+
+:global .tags-list .itm {
+    background-color: #e5efff;
+    border-radius: 5px;
+    border: 1px solid #49628d;
+    box-shadow: 0px 3px 3px 1px rgb(73 98 141 / 36%);
+    padding: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+:global .tags-list .itm:last-child {
+    margin-right: 0;
+}
+
+:global .tags-list .itm .del {
+    border: 0;
+    border-radius: 3px;
+    background-color: transparent;
+    box-sizing: border-box;
+    color: #49628d;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Roboto-Bold';
+    font-size: 14px;
+    line-height: 10px;
+    padding: 5px;
+    height: 20px;
+    width: 20px;
+}
+
+:global .tags-list .itm .del:hover,
+:global .tags-list .itm .del:focus {
+    box-shadow: 0px 3px 3px 1px rgb(73 98 141 / 36%);
+}
+
+:global .tags-list .itm .del:active {
+    box-shadow: inset 0px 3px 3px 1px rgb(73 98 141 / 36%);
+}

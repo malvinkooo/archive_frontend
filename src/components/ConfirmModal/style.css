@@ -1,0 +1,53 @@
+.modal-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    background-color: #fff;
+    flex-basis: 500px;
+    border-radius: 5px;
+    padding: 35px 35px 25px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.close {
+    position: absolute !important;
+    top: 5px;
+    right: 5px;
+    padding: 5px;
+    display: block;
+    border: 0;
+    background-color: #49628d;
+    transition: .3s;
+}
+
+.close:hover {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 6px rgb(0 0 0 / 25%);
+}
+
+.close:hover .i-close {
+    fill: #49628d;
+}
+
+.i-close {
+    display: block;
+    fill: #ffffff;
+}
+
+.modal-title {
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Roboto-Bold';
+    text-align: center;
+    padding-bottom: 15px;
+}

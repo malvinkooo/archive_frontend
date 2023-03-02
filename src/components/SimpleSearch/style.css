@@ -1,0 +1,15 @@
+.wrapper-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col {
+    margin-bottom: 20px;
+    width: 48%;
+}
+
+.col:last-child {
+    margin-bottom: 0;
+    width: 100%;
+}
